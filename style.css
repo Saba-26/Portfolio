@@ -3,3 +3,15 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
+/** container**/
+.container{
+    padding-left:lrem;  /**rem is a css unit which is related to the font-size of the root element**/
+    padding-right:lrem;
+}
+
+
+.container-center{
+    max-width:600px;
+    margin:auto;
+}
