@@ -5,39 +5,33 @@
     --dark-gray: #6b7280;
     --off-white: #F3F4F6;
 }
-body{
+
+body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0px
 }
 
-hr{
-    margin:2rem 0rem;
+hr {
+    margin: 2rem 0rem;
 }
 
-/* Tablet Landscape */
-@media screen and (max-width: 1060px) {
-    #primary { width:67%; }
-    #secondary { width:30%; margin-left:3%;}  
+/** spaces **/
+
+.margin-md {
+    margin: 2rem;
 }
 
-/* Tabled Portrait */
-@media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
+/** container **/
+.container {
+    padding: 0rem 1rem;
 }
 
-/** container**/
-.container{
-    /**rem is a css unit which is related to the font-size of the root element**/
-    padding:0rem 1rem;
+.container-center {
+    max-width: 600px;
+    margin: auto;
 }
 
-
-.container-center{
-    max-width:600px;
-    margin:auto;
-}
-
-/**links**/
+/** links **/
 .link {
     box-sizing: border-box;
     text-decoration: none;
@@ -47,7 +41,7 @@ hr{
 .link-primary {
     background-color: var(--primary-color);
     border-radius: 0.5rem;
-    color:black;
+    color: white;
     display: block;
     max-width: 140px;
     margin: 1rem 1rem 1rem 0rem;
@@ -62,27 +56,31 @@ hr{
     margin: 1rem 1rem 1rem 0rem;
 }
 
-/** lists**/
-.list-non-bullet{
-    list-style:none;
+/** look into BEM naming convention for CSS **/
+
+/** lists **/
+
+.list-non-bullet {
+    list-style: none;
+    padding-inline-start: 0px;
 }
 
-.list-item-inline{
-    display:inline;
-    padding:0rem 0.5rem;
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
 }
 
-/**Navigation**/
+/** navigation **/
+
 .navigation {
     background-color: var(--primary-color);
-    color: black;
+    color: white;
     padding: 1rem;
     border-bottom-left-radius: 1rem;
 }
 
 .navigation .nav-brand {
     font-weight: bold;
-    font-size: 22pt;
 }
 
 .navigation .nav-pills {
@@ -90,21 +88,19 @@ hr{
 }
 
 .navigation .link {
-    color:black;
+    color: white;
 }
 
 .navigation .link-active {
     font-weight: bold;
 }
 
+/** header **/
 
-/**header**/
-.hero{
-    padding:2rem;
-    padding-top:5rem;
-    margin-left: 30px;
-    margin: 0 auto;
-    
+.hero {
+    padding: 2rem;
+    padding-top: 5rem;
+
 }
 
 .hero .hero-img {
@@ -114,46 +110,60 @@ hr{
     margin: auto;
 }
 
-.hero .hero-heading{
+.hero .hero-heading {
+    text-align: center;
     padding-top: 1rem;
-    color:var(--dark-gray);
-    text-align:center;
+    color: var(--dark-gray);
 }
 
-.hero .hero-heading .heading-inverted{
-    color:var(--primary-color);
+.hero .hero-heading .heading-inverted {
+    color: var(--primary-color);
 }
 
-/**Section**/
-.section{
-    padding:2rem;
-}
-.section h1{
-     text-align: center;
-} 
+/** sections **/
 
-.ow{
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+
+}
+
+.ow {
     background-color: var(--off-white);
 }
 
-/**Footer**/
-.footer{
+/** footers **/
+
+.footer {
     background-color: var(--primary-color);
-    padding:2rem 1rem;
+    padding: 4rem 1rem;
     text-align: center;
-    color:black;
+    color: white;
     border-top-right-radius: 1rem;
 }
 
-.footer .link{
-    color:black;
+.footer .link {
+    color: white
 }
 
-.footer .footer-header{
-    color:black;
+.footer .footer-header {
     font-weight: bold;
     font-size: large;
 }
-.footer ul{
+
+.footer ul {
     padding-inline-start: 0px;
+}
+
+/** projects **/
+.showcase-list {
+    padding: 2rem;
+}
+
+/** blogs **/
+.showcase-blog {
+    padding-bottom: 6rem;
 }
