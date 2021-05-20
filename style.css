@@ -90,12 +90,15 @@ hr{
 .hero{
     padding:2rem;
     padding-top:5rem;
+    margin-left: 30px;
+    
 }
 
-.hero .hero-img{
-    max-width:350px;
-    display:block;
-    margin:auto;
+.hero .hero-img {
+    max-width: 80%;
+    width: 350px;
+    display: block;
+    margin: auto;
 }
 
 .hero .hero-heading{
